@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #fff;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            font-family: fantasy;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+        }
+
+        nav .brand {
+            color: red;
+            font-size: 25px;
+            font-weight: 400;
+            font-family: Bahnschrift;
+            text-decoration: none;
+            margin-left: 60px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin-right: 50px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #767676;
+            font-size: 17px;
+            font-family: Bahnschrift;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+        nav ul li a.active {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav ul li a.active:hover {
+            color: red;
+        }
+
+
+        .showcase {
+            height: 410px;
+            color: #f8f9fa;
+            background: red;
+            margin-top: 70px;
+        }
+
+        .showcase .showcase-text,
+        .showcase .showcase-img {
+            margin: 0 90px;
+        }
+
+        .showcase .showcase-text h2 {
+            font-size: 50px;
+            font-weight: 300;
+            font-family: Bahnschrift;
+        }
+
+        .showcase-img img {
+            width: 350px;
+            height: 250px;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .showcase .row.show {
+            padding: 80px 0;
+        }
+
+
+        .action-movies {
+            background: white;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+
+        .series-movies {
+            background: #f8f9fa;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+
+        .action-movies h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            color: black;
+        }
+
+        .series-movies h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            color: red;
+        }
+
+
+        .action-movies p,
+        .series-movies p {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: -15px;
+            color: gray;
+            font-family: sans-serif;
+        }
+
+        .action-movies img,
+        .series-movies img {
+            width: 300px;
+            height: 250px;
+            margin: 0 10px;
+            transition: all .9s ease;
+        }
+
+        .inner {
+            overflow: hidden;
+        }
+
+        .action-movies img:hover,
+        .series-movies img:hover {
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+
+
+        .movies {
+            margin-top: 30px;
+
+        }
+
+        .movies-2 {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: white;
+            background-color: black;
+            border: 5px solid white;
+            padding: 7px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #767676;
+            background: #000;
+        }
+
+        footer p {
+            font-family: Bahnschrift;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="brand">Canboy Movie Theatre</a>
+            <ul>
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#action">Action Movies</a>
+                </li>
+                <li>
+                    <a href="#series">Series Movies</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com" target="_blank">Netflix</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="showcase">
+        <div class="container">
+            <div class="row show">
+                <div class="showcase-text">
+                    <h2>WELCOME TO THE MOVIES WORLD</h2>
+                </div>
+                <div class="showcase-img">
+                    <img src="e.jpg" alt="movie pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="action-movies" id="action">
+        <h2>ACTION MOVIES</h2>
+        <p>This action movies are done by the best actors and they did well there job and make there movies to be good
+        </p>
+
+        <article class="movies">
+            <div class="container">
+                <div class="row">
+                    <div class="inner">
+                        <a href="b.jpg" target="_blank"><img src="b.jpg" alt="action"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="f.jpg" target="_blank"><img src="f.jpg" alt="disel"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="c.jpg" target="_blank"><img src="c.jpg" alt="rock"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="movies-2">
+            <div class="container">
+                <div class="row">
+                    <div class="inner">
+                        <a href="p.jpg" target="_blank"><img src="p.jpg" alt="avater"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="q.jpg"" target=" _blank"><img src="q.jpg" alt="kon"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="o.jpg" target="_blank"><img src="o.jpg" alt="don"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="series-movies" id="series">
+        <h2>SERIES MOVIES</h2>
+        <p>The best series ever happen in this world which make your day better</p>
+
+        <article class="movies">
+            <div class="container">
+                <div class="row">
+                    <div class="inner">
+                        <a href="k.jpg" target="_blank"><img src="k.jpg" alt="action"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="l.jpg" target="_blank"><img src="l.jpg" alt="disel"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="g.jpg" target="_blank"><img src="g.jpg" alt="rock"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="movies-2">
+            <div class="container">
+                <div class="row">
+                    <div class="inner">
+                        <a href="n.jpg" target="_blank"><img src="n.jpg" alt="avater"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="r.jpg"" target=" _blank"><img src="r.jpg" alt="don"></a>
+                    </div>
+                    <div class="inner">
+                        <a href="s.jpg" target="_blank"><img src="s.jpg" alt="don"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 Canboy Movie Theatre</p>
+    </footer>
+
+</body>
+
+</html>
